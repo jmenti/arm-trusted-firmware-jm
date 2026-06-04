@@ -6,7 +6,7 @@
  */
 
 #include <am62lx_ddr_config.h>
-#include <am62lx_skevm_lp4_50_800.h>
+#include DDR_CFG_HEADER
 
 const struct am62lx_ddr_config am62lx_ddr_cfg = {
 	.ddr_freq0    = DDRSS_PLL_FREQUENCY_0,

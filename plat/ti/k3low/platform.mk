@@ -59,6 +59,9 @@ BUILD_PLAT := $(abspath ${BUILD_BASE})/${PLAT}/${TARGET_BOARD}/${BUILD_TYPE}
 
 ifeq (${IMAGE_BL1}, 1)
 override ENABLE_PIE := 0
+ifndef DDR_CFG_HEADER
+$(error DDR_CFG_HEADER must be set in board.mk or on the command line)
+endif
 endif
 
 PLAT_INCLUDES +=	\
